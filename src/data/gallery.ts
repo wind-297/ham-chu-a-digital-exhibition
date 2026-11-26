@@ -73,7 +73,7 @@ export const galleryItems: GalleryItem[] = [
     era: 'Đồ họa nghiên cứu bảo tàng',
     category: 'Bản vẽ nhận diện',
     description: 'Bản vẽ đồ họa trực quan giải thích mặt cắt ngang giàn kèo tam giác hình chữ A, cấu trúc hai mái dốc, lớp đất phủ bảo vệ và khoang trú ẩn bán âm dưới lòng đất.',
-    credit: 'Đồ họa triển lãm — Dự án Em là nhà sáng tạo',
+    credit: 'Đồ họa nghiên cứu phục dựng hình thái công trình',
     license: 'Hình vẽ minh họa khái niệm giáo dục',
     sourceNote: 'Thiết kế theo mô tả của Bách khoa Toàn thư Việt Nam',
     badge: 'Sơ đồ giáo dục'

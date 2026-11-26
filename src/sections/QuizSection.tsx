@@ -41,14 +41,14 @@ export const QuizSection: React.FC = () => {
         <div className="max-w-3xl mb-10 text-center mx-auto">
           <div className="inline-flex items-center gap-2 text-xs font-mono tracking-wider uppercase text-archive-terracotta font-semibold mb-2">
             <span className="w-6 h-px bg-archive-terracotta"></span>
-            KNOWLEDGE CHECK • KIỂM TRA HIỂU BIẾT
+            TÌM HIỂU VÀ KIỂM TRA KIẾN THỨC
             <span className="w-6 h-px bg-archive-terracotta"></span>
           </div>
           <h2 className="font-serif text-2xl sm:text-4xl font-bold text-archive-charcoal leading-tight">
-            TRẢI NGHIỆM TÌM HIỂU HIỆN VẬT
+            Trắc nghiệm Lịch sử Hiện vật
           </h2>
           <p className="font-serif italic text-base sm:text-lg text-archive-umber mt-2">
-            Củng cố kiến thức lịch sử về hầm trú ẩn chữ A thông qua 5 câu hỏi trắc nghiệm giáo dục được trích xuất từ tư liệu bảo tàng.
+            Hệ thống 5 câu hỏi kiểm tra kiến thức về nguồn gốc, bối cảnh, cấu tạo và ý nghĩa lịch sử của hầm trú ẩn chữ A.
           </p>
         </div>
 

@@ -22,7 +22,7 @@ export default {
         }
       },
       fontFamily: {
-        serif: ['"Playfair Display"', '"Noto Serif"', 'Georgia', 'serif'],
+        serif: ['"Source Serif 4"', '"Noto Serif"', 'Georgia', 'serif'],
         sans: ['"Be Vietnam Pro"', '"Inter"', 'system-ui', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
       },

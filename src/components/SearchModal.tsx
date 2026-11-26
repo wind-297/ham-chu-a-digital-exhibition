@@ -138,7 +138,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
           title: term.term,
           snippet: term.brief,
           category: 'Thuật ngữ',
-          targetHref: '#so-sanh'
+          targetHref: '#tong-quan'
         });
       }
     });
@@ -293,7 +293,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
         {/* Modal Footer */}
         <div className="p-3 border-t border-archive-border bg-archive-ivory text-[11px] font-mono text-archive-stone flex justify-between items-center">
           <span>{results.length} kết quả phù hợp</span>
-          <span>Dự án: Em là nhà sáng tạo — Bảo tàng Quốc phòng</span>
+          <span>Chuyên khảo Lịch sử Số: Hầm Trú Ẩn Chữ A</span>
         </div>
       </div>
     </div>

@@ -1,18 +1,16 @@
 import React from 'react';
-import { ShieldCheck } from 'lucide-react';
-import { verificationPrinciples } from '../data/references';
 
 export const OverviewSection: React.FC = () => {
   const quickSpecs = [
-    { label: 'Tên hiện vật', value: 'Hầm trú ẩn chữ A' },
-    { label: 'Tên gọi khác', value: 'Hầm kèo, Hầm Triều Tiên' },
-    { label: 'Phân loại công sự', value: 'Công trình phòng tránh bom đạn cấp cơ sở' },
-    { label: 'Bối cảnh sử dụng', value: 'Kháng chiến chống Mỹ, cứu nước' },
+    { label: 'Tên gọi chính thức', value: 'Hầm trú ẩn chữ A' },
+    { label: 'Tên gọi khác trong tư liệu', value: 'Hầm kèo, hầm Triều Tiên' },
+    { label: 'Phân loại công trình', value: 'Công trình phòng tránh bom đạn cấp cơ sở' },
+    { label: 'Bối cảnh lịch sử', value: 'Kháng chiến chống Mỹ, cứu nước (1965 – 1975)' },
     { label: 'Thời kỳ phổ biến', value: 'Từ giữa thập niên 1960' },
-    { label: 'Hình dạng đặc trưng', value: 'Mặt cắt ngang hình tam giác, khung dạng chữ A' },
-    { label: 'Vật liệu lịch sử', value: 'Tre ngâm, gỗ đồi, sắt dã chiến, bê tông đúc sẵn' },
-    { label: 'Đối tượng bảo vệ', value: 'Nhân dân, học sinh, cán bộ, bộ đội trực chiến' },
-    { label: 'Mục đích cốt lõi', value: 'Trú ẩn tức thời trong các đợt không kích và pháo kích' },
+    { label: 'Hình thái đặc trưng', value: 'Mặt cắt ngang hình tam giác cân dạng chữ A' },
+    { label: 'Vật liệu ghi nhận', value: 'Tre ngâm, gỗ đồi, sắt dã chiến, bê tông đúc sẵn' },
+    { label: 'Đối tượng sử dụng', value: 'Dân cư, học sinh, cán bộ, lực lượng quân sự' },
+    { label: 'Mục đích cốt lõi', value: 'Trú ẩn tức thời trước không kích và pháo kích' },
   ];
 
   return (
@@ -20,24 +18,20 @@ export const OverviewSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="max-w-3xl mb-12">
-          <div className="flex items-center gap-2 text-xs font-mono tracking-wider uppercase text-archive-terracotta font-semibold mb-2">
-            <span className="w-6 h-px bg-archive-terracotta"></span>
-            CHƯƠNG 01 • OBJECT OVERVIEW
-          </div>
           <h2 className="font-serif text-2xl sm:text-4xl font-bold text-archive-charcoal leading-tight">
-            NHẬN DIỆN HIỆN VẬT
+            Tổng quan và Định danh Hiện vật
           </h2>
           <p className="font-serif italic text-base sm:text-lg text-archive-umber mt-2">
-            Giải mã hình thái, nguồn gốc định danh và vị trí của công trình trong mạng lưới phòng không nhân dân.
+            Đặc trưng hình thái, xuất xứ tên gọi và vị trí của công trình trong mạng lưới phòng không nhân dân.
           </p>
         </div>
 
         {/* 2-Column Balanced Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-          {/* Left Column: Editorial Presentation (6 cols) */}
+          {/* Left Column: Academic Presentation (6 cols) */}
           <div className="lg:col-span-6 space-y-5 text-archive-charcoal/90 editorial-justify">
             <h3 className="font-serif text-lg sm:text-xl font-bold text-archive-olive pb-2 border-b border-archive-border/60">
-              Bản chất và Ý nghĩa Định danh
+              Bản chất và Xuất xứ Tên gọi
             </h3>
 
             <p className="drop-cap text-xs sm:text-sm leading-relaxed">
@@ -61,28 +55,25 @@ export const OverviewSection: React.FC = () => {
               các hoạt động sinh hoạt, học tập và lao động.
             </p>
 
-            {/* Archival Quotation Callout */}
+            {/* Archival Quotation */}
             <div className="p-4 bg-archive-parchment rounded border border-archive-border border-l-4 border-l-archive-olive text-xs text-archive-umber italic">
               <p className="font-serif">
                 "Hình ảnh những căn hầm nhỏ bên đường làng, trong sân trường hay cạnh nơi làm việc đã trở thành một phần ký ức đặc trưng của xã hội Việt Nam trong thời chiến."
               </p>
               <div className="mt-2 text-[11px] font-mono font-normal not-italic text-archive-stone text-right">
-                — Trích dẫn: Bách khoa Toàn thư Việt Nam
+                — Bách khoa Toàn thư Việt Nam
               </div>
             </div>
           </div>
 
-          {/* Right Column: Balanced Metadata Table & 3 Verification Rules (6 cols) */}
+          {/* Right Column: Identification Table & Structural Distinction (6 cols) */}
           <div className="lg:col-span-6 space-y-6">
-            {/* Quick Identification Specs Table */}
+            {/* Identification Specs Table */}
             <div className="bg-archive-parchment p-5 sm:p-6 rounded-lg border border-archive-border shadow-archive archival-border">
-              <div className="flex items-center justify-between pb-3 mb-4 border-b border-archive-border/80">
-                <span className="font-mono text-xs uppercase tracking-wider text-archive-stone font-semibold">
-                  HỒ SƠ GIÁM ĐỊNH HIỆN VẬT
-                </span>
-                <span className="px-2 py-0.5 rounded bg-archive-ivory border border-archive-border text-[11px] font-mono text-archive-olive font-bold">
-                  BẢO TÀNG LƯU TRỮ
-                </span>
+              <div className="pb-3 mb-4 border-b border-archive-border/80">
+                <h3 className="font-serif font-bold text-base text-archive-charcoal">
+                  Thông Tin Nhận Diện Hiện Vật
+                </h3>
               </div>
 
               <div className="divide-y divide-archive-border/50 text-xs">
@@ -99,26 +90,28 @@ export const OverviewSection: React.FC = () => {
               </div>
             </div>
 
-            {/* 3 Strict Archival Museum Principles Callout */}
+            {/* Distinction Paragraph (Integrated from former Section 8) */}
             <div className="p-5 bg-archive-ivory rounded-lg border border-archive-border">
-              <div className="flex items-center gap-2 mb-3 text-xs font-mono uppercase tracking-wider text-archive-olive font-bold">
-                <ShieldCheck className="w-4 h-4 text-archive-terracotta" />
-                <span>3 NGUYÊN TẮC BẢO TÀNG KHI TIẾP CẬN HIỆN VẬT</span>
-              </div>
-
-              <div className="space-y-3 text-xs text-archive-charcoal/90">
-                {verificationPrinciples.map((rule, idx) => (
-                  <div key={idx} className="flex items-start gap-2.5">
-                    <span className="w-5 h-5 rounded-full bg-archive-olive/15 text-archive-olive font-mono text-[11px] font-bold flex items-center justify-center shrink-0 mt-0.5">
-                      {idx + 1}
-                    </span>
-                    <div>
-                      <strong className="text-archive-charcoal block mb-0.5">{rule.title}</strong>
-                      <p className="text-archive-umber leading-relaxed text-[11.5px]">{rule.content}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <h4 className="font-serif font-bold text-sm text-archive-olive mb-2">
+                Phân biệt với các loại hình công trình phòng tránh khác
+              </h4>
+              <p className="text-xs text-archive-charcoal/90 leading-relaxed editorial-justify">
+                Trong hệ thống công trình phòng không thời chiến, hầm chữ A có vị trí riêng biệt so với các loại hình khác:
+              </p>
+              <ul className="mt-2 space-y-1.5 text-xs text-archive-umber list-disc list-inside">
+                <li>
+                  <strong className="text-archive-charcoal">Hố cá nhân (tăng-xê):</strong> Chỉ phục vụ 1–2 người ẩn nấp tức thời trên đường đi, không có mái dốc.
+                </li>
+                <li>
+                  <strong className="text-archive-charcoal">Hầm tập thể:</strong> Khoang chứa lớn bằng gạch đá hoặc bê tông tại nhà máy, bệnh viện, công sở.
+                </li>
+                <li>
+                  <strong className="text-archive-charcoal">Giao thông hào:</strong> Hạ tầng rãnh sâu lộ thiên phục vụ cơ động, kết nối giữa các cụm hầm.
+                </li>
+                <li>
+                  <strong className="text-archive-charcoal">Địa đạo (như Vịnh Mốc, Củ Chi):</strong> Đại công trình ngầm liên hoàn nhiều tầng phục vụ sinh sống trường kỳ, khác hoàn toàn về quy mô và chức năng so với một căn hầm chữ A đơn lẻ.
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -14,9 +14,7 @@ import { RoleSection } from './sections/RoleSection';
 import { StructureSection } from './sections/StructureSection';
 import { WartimeLifeSection } from './sections/WartimeLifeSection';
 import { GeographySection } from './sections/GeographySection';
-import { ComparisonSection } from './sections/ComparisonSection';
 import { ValueSection } from './sections/ValueSection';
-import { GallerySection } from './sections/GallerySection';
 import { QuizSection } from './sections/QuizSection';
 import { ReferencesSection } from './sections/ReferencesSection';
 
@@ -24,7 +22,7 @@ import { galleryItems } from './data/gallery';
 
 export const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>('tong-quan');
-  const [activeLabel, setActiveLabel] = useState<string>('01. Nhận diện hiện vật');
+  const [activeLabel, setActiveLabel] = useState<string>('Nhận diện hiện vật');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isReadingModeOpen, setIsReadingModeOpen] = useState(false);
   const [isGlossaryOpen, setIsGlossaryOpen] = useState(false);
@@ -45,17 +43,15 @@ export const App: React.FC = () => {
   // ScrollSpy for Active Section
   useEffect(() => {
     const sectionElements = [
-      { id: 'tong-quan', label: '01. Nhận diện hiện vật' },
-      { id: 'lich-su', label: '02. Hành trình lịch sử' },
-      { id: 'vai-tro', label: '03. Công dụng và vai trò' },
-      { id: 'cau-tao', label: '04. Khám phá đặc điểm cấu tạo' },
-      { id: 'doi-song', label: '05. Đời sống dưới mái hầm' },
-      { id: 'dia-ban', label: '06. Những địa bàn lịch sử' },
-      { id: 'so-sanh', label: '07. So sánh các loại công trình' },
-      { id: 'gia-tri', label: '08. Giá trị lịch sử & Quốc phòng' },
-      { id: 'thu-vien-anh', label: 'Tư liệu hình ảnh & Hiện vật' },
-      { id: 'kiem-tra-kien-thuc', label: 'Trải nghiệm tìm hiểu hiện vật' },
-      { id: 'tu-lieu', label: '09. Tư liệu tham khảo chính thức' },
+      { id: 'tong-quan', label: 'Nhận diện hiện vật' },
+      { id: 'lich-su', label: 'Lịch sử hình thành' },
+      { id: 'vai-tro', label: 'Vai trò phòng không' },
+      { id: 'cau-tao', label: 'Cấu tạo & Vật liệu' },
+      { id: 'doi-song', label: 'Đời sống dưới mái hầm' },
+      { id: 'dia-ban', label: 'Địa bàn trọng điểm' },
+      { id: 'gia-tri', label: 'Giá trị lịch sử' },
+      { id: 'tu-lieu', label: 'Tài liệu tham khảo' },
+      { id: 'kiem-tra-kien-thuc', label: 'Trắc nghiệm lịch sử' },
     ];
 
     const observer = new IntersectionObserver(
@@ -105,7 +101,7 @@ export const App: React.FC = () => {
           onOpenSearch={() => setIsSearchOpen(true)} 
         />
 
-        {/* Section 02: Overview & Identification */}
+        {/* Section 02: Overview & Identification (includes comparative distinctions) */}
         <OverviewSection />
 
         {/* Section 03: Historical Timeline */}
@@ -114,7 +110,7 @@ export const App: React.FC = () => {
         {/* Section 04: Purpose & Role */}
         <RoleSection />
 
-        {/* Section 05: Structure Explorer */}
+        {/* Section 05: Structure & Materials Explorer */}
         <StructureSection />
 
         {/* Section 06: Life in Wartime */}
@@ -123,19 +119,13 @@ export const App: React.FC = () => {
         {/* Section 07: Geographical Context */}
         <GeographySection />
 
-        {/* Section 08: Historical Comparison */}
-        <ComparisonSection />
-
-        {/* Section 09: Historical Value */}
+        {/* Section 08: Historical Value & Defense Significance */}
         <ValueSection />
-
-        {/* Historical Image & Artifact Gallery */}
-        <GallerySection onOpenLightbox={(idx) => setLightboxIndex(idx)} />
 
         {/* Educational Knowledge Check */}
         <QuizSection />
 
-        {/* Section 10: References & Museum Notes */}
+        {/* Section 09: Archival References & Bibliography */}
         <ReferencesSection />
       </main>
 

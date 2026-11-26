@@ -8,13 +8,13 @@ export const ValueSection: React.FC = () => {
         <div className="max-w-3xl mb-12">
           <div className="flex items-center gap-2 text-xs font-mono tracking-wider uppercase text-archive-terracotta font-semibold mb-2">
             <span className="w-6 h-px bg-archive-terracotta"></span>
-            CHƯƠNG 08 • HISTORICAL VALUE
+            CHƯƠNG VII • GIÁ TRỊ LỊCH SỬ
           </div>
           <h2 className="font-serif text-2xl sm:text-4xl font-bold text-archive-charcoal leading-tight">
-            GIÁ TRỊ LỊCH SỬ VÀ Ý NGHĨA QUỐC PHÒNG
+            Giá trị Lịch sử và Ý nghĩa Quốc phòng
           </h2>
           <p className="font-serif italic text-base sm:text-lg text-archive-umber mt-2">
-            Bài học muôn đời về sức mạnh lòng dân, tinh thần chủ động phòng tránh và thông điệp hòa bình cho các thế hệ tương lai.
+            Bài học về sức mạnh thế trận lòng dân, tinh thần chủ động phòng tránh và ý thức trân trọng hòa bình.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export const ValueSection: React.FC = () => {
                 và lao động trong hoàn cảnh vô cùng khó khăn."
               </p>
               <div className="mt-3 text-center text-xs font-mono text-archive-stone">
-                — Bản thuyết minh Bảo tàng Quốc phòng Việt Nam
+                — Trích lược tư liệu nghiên cứu hiện vật lịch sử quân sự
               </div>
             </div>
 

@@ -14,13 +14,13 @@ export const StructureSection: React.FC = () => {
         <div className="max-w-3xl mb-10">
           <div className="flex items-center gap-2 text-xs font-mono tracking-wider uppercase text-archive-terracotta font-semibold mb-2">
             <span className="w-6 h-px bg-archive-terracotta"></span>
-            CHƯƠNG 04 • STRUCTURE EXPLORER
+            CHƯƠNG IV • CẤU TẠO CÔNG TRÌNH
           </div>
           <h2 className="font-serif text-2xl sm:text-4xl font-bold text-archive-charcoal leading-tight">
-            KHÁM PHÁ ĐẶC ĐIỂM CẤU TẠO
+            Đặc điểm Cấu tạo và Vật liệu
           </h2>
           <p className="font-serif italic text-base sm:text-lg text-archive-umber mt-2">
-            Nhận diện hình thái giàn kèo tam giác chữ A, mái nghiêng che chắn và sự phong phú của vật liệu địa phương.
+            Hình thái giàn kèo tam giác chữ A, mái nghiêng phân tán xung lực và sự vận dụng linh hoạt vật liệu tự nhiên địa phương.
           </p>
         </div>
 
@@ -66,8 +66,8 @@ export const StructureSection: React.FC = () => {
                 
                 {/* Ground Reference Level */}
                 <line x1="0" y1="180" x2="500" y2="180" stroke="#665344" strokeWidth="2" strokeDasharray="5 3" />
-                <rect x="8" y="188" width="116" height="18" fill="#F5F0E6" rx="3" opacity="0.95" />
-                <text x="66" y="200" textAnchor="middle" fontFamily="monospace" fontSize="8.5" fill="#665344" fontWeight="bold">MẶT ĐẤT TỰ NHIÊN</text>
+                <rect x="410" y="186" width="84" height="16" fill="#F5F0E6" stroke="#665344" strokeWidth="0.8" rx="3" opacity="0.95" />
+                <text x="452" y="197" textAnchor="middle" fontFamily="monospace" fontSize="7.5" fill="#665344" fontWeight="bold">MẶT ĐẤT</text>
 
                 {/* Sunken Pit excavation */}
                 <polygon points="90,180 120,310 380,310 410,180" fill="#D8D0C2" stroke="#665344" strokeWidth="1.5" />
@@ -103,11 +103,11 @@ export const StructureSection: React.FC = () => {
                   fill="#41483A" 
                   opacity="0.88" 
                 />
-                <text x="250" y="24" textAnchor="middle" fontFamily="'Playfair Display', serif" fontSize="12" fill="#41483A" fontWeight="bold">
+                <text x="250" y="24" textAnchor="middle" fontFamily="'Source Serif 4', Georgia, serif" fontSize="12" fill="#41483A" fontWeight="bold">
                   MÁI ĐẮP ĐẤT & PHÊN TRE BẢO VỆ
                 </text>
 
-                {/* Interactive Hotspot Circles */}
+                {/* Static Architectural Hotspot Pins (No motion/ping) */}
                 {shelterComponents.map((comp) => {
                   const isSelected = comp.id === selectedComponentId;
                   const cx = (comp.hotspot.x / 100) * 500;
@@ -116,31 +116,30 @@ export const StructureSection: React.FC = () => {
                   return (
                     <g 
                       key={comp.id} 
-                      className="cursor-pointer group"
+                      className="cursor-pointer"
                       onClick={() => setSelectedComponentId(comp.id)}
                     >
-                      {/* Pulse Ring */}
+                      {/* Static Outer Indicator Ring */}
                       <circle 
                         cx={cx} 
                         cy={cy} 
-                        r={isSelected ? 18 : 12} 
+                        r={isSelected ? 14 : 10} 
                         fill={isSelected ? '#A65F4B' : '#41483A'} 
-                        opacity={isSelected ? 0.35 : 0.2}
-                        className={isSelected ? 'animate-ping' : 'group-hover:opacity-40 transition-opacity'}
+                        opacity={isSelected ? 0.3 : 0.15}
                       />
                       {/* Pin Center */}
                       <circle 
                         cx={cx} 
                         cy={cy} 
-                        r={isSelected ? 10 : 8} 
+                        r={isSelected ? 9 : 7} 
                         fill={isSelected ? '#A65F4B' : '#FAF7F2'} 
                         stroke={isSelected ? '#FAF7F2' : '#665344'} 
-                        strokeWidth="2.5"
+                        strokeWidth="2"
                       />
                       <circle 
                         cx={cx} 
                         cy={cy} 
-                        r="3.5" 
+                        r="3" 
                         fill={isSelected ? '#FAF7F2' : '#A65F4B'} 
                       />
                     </g>

@@ -155,7 +155,7 @@ export const ReadingModeModal: React.FC<ReadingModeModalProps> = ({ isOpen, onCl
             </nav>
 
             <div className="mt-4 pt-3 border-t border-archive-border/50 text-[11px] font-mono text-archive-stone">
-              <span>Bảo tàng Quốc phòng Việt Nam</span>
+              <span>Ấn phẩm Lịch sử Quân sự</span>
             </div>
           </div>
         </aside>
@@ -165,7 +165,7 @@ export const ReadingModeModal: React.FC<ReadingModeModalProps> = ({ isOpen, onCl
           {/* Header Banner */}
           <div className="text-center pb-8 border-b border-archive-border mb-10">
             <span className="text-xs font-mono uppercase tracking-widest text-archive-terracotta font-bold">
-              BẢO TÀNG QUỐC PHÒNG VIỆT NAM — DỰ ÁN: EM LÀ NHÀ SÁNG TẠO
+              CHUYÊN KHẢO TƯ LIỆU LỊCH SỬ QUÂN SỰ
             </span>
             <h1 className="font-serif text-2xl sm:text-4xl font-extrabold text-archive-charcoal mt-3 mb-4 leading-tight">
               HẦM TRÚ ẨN CHỮ A – DẤU ẤN CỦA CÔNG TÁC PHÒNG KHÔNG NHÂN DÂN TRONG KHÁNG CHIẾN CHỐNG MỸ

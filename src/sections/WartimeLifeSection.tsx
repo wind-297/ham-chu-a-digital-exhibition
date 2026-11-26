@@ -10,13 +10,13 @@ export const WartimeLifeSection: React.FC = () => {
         <div className="max-w-3xl mb-14">
           <div className="flex items-center gap-2 text-xs font-mono tracking-wider uppercase text-archive-terracotta font-semibold mb-2">
             <span className="w-6 h-px bg-archive-terracotta"></span>
-            CHƯƠNG 05 • LIFE IN WARTIME
+            CHƯƠNG V • ĐỜI SỐNG THỜI CHIẾN
           </div>
           <h2 className="font-serif text-2xl sm:text-4xl font-bold text-archive-charcoal leading-tight">
-            ĐỜI SỐNG DƯỚI MÁI HẦM
+            Đời sống Dân cư Dưới Mái Hầm
           </h2>
           <p className="font-serif italic text-base sm:text-lg text-archive-umber mt-2">
-            Không chỉ là một cấu trúc vật chất, đây là câu chuyện về những con người đã sinh hoạt, học tập và gìn giữ ngọn lửa hy vọng giữa mưa bom bão đạn.
+            Không chỉ là công trình kỹ thuật phòng thủ, mái hầm chữ A là không gian che chở sinh hoạt, lớp học sơ tán và tinh thần kiên cường của nhân dân.
           </p>
         </div>
 
@@ -31,10 +31,10 @@ export const WartimeLifeSection: React.FC = () => {
               <div className={`lg:col-span-7 space-y-4 ${idx % 2 === 1 ? 'lg:order-2' : ''}`}>
                 <div className="flex items-center gap-2">
                   <span className="font-mono text-xs uppercase tracking-widest text-archive-terracotta font-bold">
-                    CHƯƠNG {chap.chapterNumber}
+                    PHẦN {idx + 1}
                   </span>
                   <span className="text-archive-stone">•</span>
-                  <span className="font-mono text-xs text-archive-stone">HỒ SƠ KÝ ỨC THỜI CHIẾN</span>
+                  <span className="font-mono text-xs text-archive-stone">TƯ LIỆU KÝ ỨC</span>
                 </div>
 
                 <h3 className="font-serif text-2xl sm:text-3xl font-bold text-archive-charcoal leading-snug">
@@ -88,8 +88,8 @@ export const WartimeLifeSection: React.FC = () => {
                   )}
 
                   <div className="pt-3 border-t border-archive-border/40 text-[11px] font-mono text-archive-stone flex items-center justify-between">
-                    <span>BẢO TÀNG LỊCH SỬ VIỆT NAM</span>
-                    <span className="text-archive-olive font-bold">KÝ ỨC THỜI CHIẾN</span>
+                    <span>GHI CHÉP LỊCH SỬ</span>
+                    <span className="text-archive-olive font-medium">TƯ LIỆU DÂN SỰ THỜI CHIẾN</span>
                   </div>
                 </div>
               </div>

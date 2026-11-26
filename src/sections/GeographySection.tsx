@@ -14,13 +14,13 @@ export const GeographySection: React.FC = () => {
         <div className="max-w-3xl mb-12">
           <div className="flex items-center gap-2 text-xs font-mono tracking-wider uppercase text-archive-terracotta font-semibold mb-2">
             <span className="w-6 h-px bg-archive-terracotta"></span>
-            CHƯƠNG 06 • GEOGRAPHICAL CONTEXT
+            CHƯƠNG VI • ĐỊA BÀN TRỌNG ĐIỂM
           </div>
           <h2 className="font-serif text-2xl sm:text-4xl font-bold text-archive-charcoal leading-tight">
-            NHỮNG ĐỊA BÀN GẮN VỚI LỊCH SỬ HẦM TRÚ ẨN
+            Địa bàn Sử dụng Trọng điểm
           </h2>
           <p className="font-serif italic text-base sm:text-lg text-archive-umber mt-2">
-            Hầm chữ A hiện diện trong những môi trường đa dạng: từ tuyến lửa Khu IV đến Thủ đô sơ tán và vùng vĩ tuyến khói lửa.
+            Hầm chữ A hiện diện rộng khắp từ tuyến lửa Khu IV, Vĩnh Linh đến các vùng sơ tán tại miền Bắc và căn cứ kháng chiến miền Nam.
           </p>
         </div>
 
@@ -132,7 +132,7 @@ export const GeographySection: React.FC = () => {
             </div>
 
             <p className="text-[11px] font-mono text-archive-stone mt-3 text-center">
-              [Sơ đồ khái quát hóa các địa danh ghi nhận trong bài thuyết minh lịch sử]
+              Sơ đồ khái quát các địa bàn trọng điểm theo tư liệu lịch sử
             </p>
           </div>
 
@@ -156,7 +156,7 @@ export const GeographySection: React.FC = () => {
             {/* Recorded Statistics Cards */}
             <div className="pt-3 border-t border-archive-border/60">
               <span className="text-xs font-mono font-bold text-archive-olive uppercase tracking-wider block mb-2.5">
-                SỐ LIỆU TƯ LIỆU ĐÃ ĐƯỢC XÁC MINH:
+                DỮ LIỆU TƯ LIỆU LỊCH SỬ:
               </span>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {selectedRegion.recordedData.map((data, idx) => (
