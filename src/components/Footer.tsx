@@ -53,14 +53,35 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Archival Sources & Verification (4 cols) */}
-          <div className="md:col-span-4 space-y-3">
-            <h4 className="font-serif font-bold text-sm text-archive-paper uppercase tracking-wider">
-              Cơ sở tư liệu
-            </h4>
-            <p className="text-xs text-archive-stone leading-relaxed">
-              Dữ liệu và nội dung công trình được khảo cứu từ các văn kiện lưu trữ lịch sử quân sự, các công trình nghiên cứu di sản và tư liệu bảo tàng về công tác phòng không nhân dân Việt Nam.
-            </p>
+          {/* Archival Sources & QR Code (4 cols) */}
+          <div className="md:col-span-4 space-y-4">
+            <div className="space-y-2">
+              <h4 className="font-serif font-bold text-sm text-archive-paper uppercase tracking-wider">
+                Cơ sở tư liệu
+              </h4>
+              <p className="text-xs text-archive-stone leading-relaxed">
+                Dữ liệu và nội dung công trình được khảo cứu từ các văn kiện lưu trữ lịch sử quân sự, các công trình nghiên cứu di sản và tư liệu bảo tàng về công tác phòng không nhân dân Việt Nam.
+              </p>
+            </div>
+
+            {/* QR Code Card */}
+            <div className="p-3 bg-archive-charcoal/40 rounded border border-archive-charcoal flex items-center gap-3.5">
+              <div className="p-1.5 bg-white rounded shrink-0">
+                <img 
+                  src="./qr-code.svg" 
+                  alt="Mã QR liên kết website Hầm Trú Ẩn Chữ A" 
+                  className="w-16 h-16 sm:w-20 sm:h-20"
+                />
+              </div>
+              <div className="space-y-1 text-xs">
+                <span className="font-mono text-[11px] text-archive-terracotta uppercase tracking-wider font-bold block">
+                  MÃ QR TRUY CẬP
+                </span>
+                <p className="text-archive-stone text-[11.5px] leading-snug">
+                  Quét mã để truy cập nhanh ấn phẩm số trên thiết bị di động.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
