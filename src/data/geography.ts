@@ -8,7 +8,7 @@ export const geographicalRegions: GeographicalRegion[] = [
     strategicRole: 'Tuyến đầu miền Bắc chi viện cho chiến trường miền Nam, túi bom gánh chịu đòn không kích tàn khốc.',
     historicalContext: 'Đầu năm 1965, khi Mỹ leo thang đánh phá ác liệt vào các tỉnh Bắc Trung Bộ, quân và dân Khu IV (Thanh Hóa, Nghệ An, Hà Tĩnh, Quảng Bình, Vĩnh Linh) đã sáng tạo dựng nên những căn hầm chữ A đầu tiên từ tre gỗ tại chỗ để vừa bám trụ sản xuất, vừa bảo vệ giao thông vận tải chi viện tiền tuyến.',
     recordedData: [
-      { label: 'Thời điểm ghi nhận đầu tiên', value: 'Đầu năm 1965', note: 'Ghi nhận theo Bách khoa Toàn thư Việt Nam' },
+      { label: 'Thời điểm ghi nhận đầu tiên', value: 'Đầu năm 1965' },
       { label: 'Vật liệu chủ lực', value: 'Tre ngâm, gỗ đồi, đất đá đầm chặt' },
       { label: 'Đặc trưng môi trường', value: 'Địa bàn chiến sự ác liệt, đồi dốc và đồng bằng ven biển' }
     ],

@@ -917,7 +917,7 @@ export const VietnamMap: React.FC<VietnamMapProps> = ({ selectedRegionId, onSele
           onClick={() => onSelectRegion('hanoi')}
         >
           <circle cx="491" cy="198" r={selectedRegionId === 'hanoi' ? 7 : 5} fill={selectedRegionId === 'hanoi' ? '#A65F4B' : '#262723'} stroke="#FAF7F2" strokeWidth="1.5" />
-          <text x="506" y="202" fontFamily="'Be Vietnam Pro', sans-serif" fontSize="10" fill={selectedRegionId === 'hanoi' ? '#A65F4B' : '#262723'} fontWeight="bold">
+          <text x="508" y="202" fontFamily="'Be Vietnam Pro', sans-serif" fontSize="10" fill={selectedRegionId === 'hanoi' ? '#A65F4B' : '#262723'} fontWeight="bold">
             Hà Nội
           </text>
         </g>
@@ -928,7 +928,7 @@ export const VietnamMap: React.FC<VietnamMapProps> = ({ selectedRegionId, onSele
           onClick={() => onSelectRegion('khu-iv')}
         >
           <circle cx="445" cy="315" r={selectedRegionId === 'khu-iv' || selectedRegionId === 'nghe-an' ? 7 : 5} fill={selectedRegionId === 'khu-iv' || selectedRegionId === 'nghe-an' ? '#A65F4B' : '#262723'} stroke="#FAF7F2" strokeWidth="1.5" />
-          <text x="432" y="318" textAnchor="end" fontFamily="'Be Vietnam Pro', sans-serif" fontSize="9.5" fill={selectedRegionId === 'khu-iv' || selectedRegionId === 'nghe-an' ? '#A65F4B' : '#262723'} fontWeight="bold">
+          <text x="425" y="318" textAnchor="end" fontFamily="'Be Vietnam Pro', sans-serif" fontSize="9.5" fill={selectedRegionId === 'khu-iv' || selectedRegionId === 'nghe-an' ? '#A65F4B' : '#262723'} fontWeight="bold">
             Khu IV (Nghệ An)
           </text>
         </g>
@@ -939,7 +939,7 @@ export const VietnamMap: React.FC<VietnamMapProps> = ({ selectedRegionId, onSele
           onClick={() => onSelectRegion('vinh-linh')}
         >
           <circle cx="569" cy="462" r={selectedRegionId === 'vinh-linh' ? 7 : 5} fill={selectedRegionId === 'vinh-linh' ? '#A65F4B' : '#262723'} stroke="#FAF7F2" strokeWidth="1.5" />
-          <text x="584" y="456" fontFamily="'Be Vietnam Pro', sans-serif" fontSize="9.5" fill={selectedRegionId === 'vinh-linh' ? '#A65F4B' : '#262723'} fontWeight="bold">
+          <text x="586" y="456" fontFamily="'Be Vietnam Pro', sans-serif" fontSize="9.5" fill={selectedRegionId === 'vinh-linh' ? '#A65F4B' : '#262723'} fontWeight="bold">
             Vĩnh Linh
           </text>
         </g>
