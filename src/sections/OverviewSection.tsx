@@ -60,9 +60,6 @@ export const OverviewSection: React.FC = () => {
               <p className="font-serif">
                 "Hình ảnh những căn hầm nhỏ bên đường làng, trong sân trường hay cạnh nơi làm việc đã trở thành một phần ký ức đặc trưng của xã hội Việt Nam trong thời chiến."
               </p>
-              <div className="mt-2 text-[11px] font-mono font-normal not-italic text-archive-stone text-right">
-                — Bách khoa Toàn thư Việt Nam
-              </div>
             </div>
           </div>
 

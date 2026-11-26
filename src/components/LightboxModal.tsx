@@ -165,12 +165,9 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
             </div>
           </div>
 
-          <div className="mt-3 pt-3 border-t border-archive-border/60 grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] font-mono text-archive-stone">
+          <div className="mt-3 pt-3 border-t border-archive-border/60 text-[11px] font-mono text-archive-stone">
             <div>
-              <strong className="text-archive-olive">Nguồn tư liệu:</strong> {currentItem.credit}
-            </div>
-            <div>
-              <strong className="text-archive-olive">Ghi chú bảo tàng:</strong> {currentItem.sourceNote}
+              <strong className="text-archive-olive">Tư liệu:</strong> {currentItem.credit}
             </div>
           </div>
         </div>

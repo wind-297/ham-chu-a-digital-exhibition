@@ -126,9 +126,6 @@ export const QuizSection: React.FC = () => {
                       Giải thích lịch sử:
                     </strong>
                     <p>{q.explanation}</p>
-                    <div className="mt-2 text-[10px] font-mono text-archive-stone">
-                      Nguồn dẫn chiếu: {q.sourceReference}
-                    </div>
                   </div>
                 )}
               </div>

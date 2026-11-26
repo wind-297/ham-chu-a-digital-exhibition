@@ -82,7 +82,6 @@ export const WartimeLifeSection: React.FC = () => {
                         <strong className="text-archive-olive block text-xs font-sans not-italic">
                           {chap.highlightQuote.author}
                         </strong>
-                        <span className="text-[11px] text-archive-stone">{chap.highlightQuote.source}</span>
                       </div>
                     </div>
                   )}

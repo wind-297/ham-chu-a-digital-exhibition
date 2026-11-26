@@ -124,14 +124,6 @@ export const TimelineSection: React.FC = () => {
                   "{selectedEvent.historicalContext}"
                 </p>
               </div>
-
-              {/* Archival Provenance Citation */}
-              <div className="pt-3 border-t border-archive-border/70 text-[11px] font-mono text-archive-stone">
-                <span className="text-archive-olive font-bold block mb-1">Nguồn dẫn chiếu:</span>
-                <p className="text-archive-charcoal font-sans text-xs bg-archive-ivory/50 p-2 rounded border border-archive-border/40">
-                  {selectedEvent.archivalSource}
-                </p>
-              </div>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { shelterComponents, structuralGuidelines } from '../data/structure';
-import { ShieldAlert, Info, Layers, AlertTriangle, Hammer } from 'lucide-react';
+import { shelterComponents } from '../data/structure';
+import { Info, Layers, Hammer } from 'lucide-react';
 
 export const StructureSection: React.FC = () => {
   const [selectedComponentId, setSelectedComponentId] = useState<string>(shelterComponents[0].id);
@@ -22,19 +22,6 @@ export const StructureSection: React.FC = () => {
           <p className="font-serif italic text-base sm:text-lg text-archive-umber mt-2">
             Hình thái giàn kèo tam giác chữ A, mái nghiêng phân tán xung lực và sự vận dụng linh hoạt vật liệu tự nhiên địa phương.
           </p>
-        </div>
-
-        {/* Strict Pedagogical Safety Notice Banner */}
-        <div className="mb-10 p-4 sm:p-5 bg-archive-ivory border-l-4 border-l-archive-terracotta border border-archive-border rounded-r-lg shadow-2xs flex items-start gap-3">
-          <ShieldAlert className="w-5 h-5 text-archive-terracotta shrink-0 mt-0.5" />
-          <div className="text-xs sm:text-[13px] leading-relaxed text-archive-charcoal">
-            <strong className="text-archive-terracotta font-bold block mb-0.5 font-mono uppercase tracking-wider">
-              {structuralGuidelines.pedagogicalDisclaimer}
-            </strong>
-            <p className="text-archive-umber">
-              Mục tiêu của sơ đồ là nhận diện giáo dục lịch sử và hiểu biết di sản quốc phòng, không phục vụ mục đích xây dựng công trình trú ẩn dân dụng hay phòng thủ thời bình.
-            </p>
-          </div>
         </div>
 
         {/* Interactive Structure Explorer Grid */}
@@ -213,17 +200,6 @@ export const StructureSection: React.FC = () => {
                     {mat}
                   </span>
                 ))}
-              </div>
-            </div>
-
-            {/* Educational Caveat Callout */}
-            <div className="p-3.5 bg-archive-parchment rounded border border-archive-border text-xs text-archive-umber flex items-start gap-2">
-              <AlertTriangle className="w-4 h-4 text-archive-terracotta shrink-0 mt-0.5" />
-              <div>
-                <strong className="text-archive-charcoal block mb-0.5 font-mono text-[11px] uppercase">
-                  Lưu ý nghiên cứu:
-                </strong>
-                <p className="text-[11.5px] leading-relaxed">{selectedComp.educationalCaveat}</p>
               </div>
             </div>
           </div>

@@ -150,7 +150,7 @@ export const ReadingModeModal: React.FC<ReadingModeModalProps> = ({ isOpen, onCl
                 className="block p-2 rounded text-archive-umber hover:bg-archive-ivory border-t border-archive-border/40 mt-2"
               >
                 <span className="font-mono text-[11px] opacity-80 block">07.</span>
-                <span>Tài liệu tham khảo & Lưu ý</span>
+                <span>Tài liệu tham khảo</span>
               </a>
             </nav>
 
@@ -249,7 +249,7 @@ export const ReadingModeModal: React.FC<ReadingModeModalProps> = ({ isOpen, onCl
           {/* References & Verification in Reading Mode */}
           <section id="read-references" className="pt-8 border-t-2 border-archive-border scroll-mt-24">
             <h2 className="font-serif text-xl sm:text-2xl font-bold text-archive-charcoal mb-4">
-              Tài Liệu Tham Khảo và Lưu Ý Lịch Sử
+              Tài Liệu Tham Khảo
             </h2>
 
             <div className="space-y-4 mb-8">
@@ -264,19 +264,6 @@ export const ReadingModeModal: React.FC<ReadingModeModalProps> = ({ isOpen, onCl
                   <p className="mt-1 text-archive-umber">{ref.description}</p>
                 </div>
               ))}
-            </div>
-
-            <div className="p-4 bg-archive-ivory rounded border border-archive-border archival-border">
-              <h3 className="font-serif font-bold text-sm text-archive-olive mb-2 uppercase tracking-wider">
-                Ba Lưu Ý Về Tính Chính Xác Của Bảo Tàng:
-              </h3>
-              <ul className="space-y-2 text-xs text-archive-charcoal/90 list-disc list-inside">
-                {verificationPrinciples.map((v, idx) => (
-                  <li key={idx}>
-                    <strong className="text-archive-charcoal">{v.title}:</strong> {v.content}
-                  </li>
-                ))}
-              </ul>
             </div>
           </section>
         </article>

@@ -83,36 +83,18 @@ export const RoleSection: React.FC = () => {
                   {r.content}
                 </p>
               </div>
-
-              <div className="mt-5 pt-3 border-t border-archive-border/60 text-[11px] font-mono text-archive-stone flex items-start gap-1.5">
-                <span className="text-archive-olive font-bold shrink-0">Ghi chú:</span>
-                <span>{r.archivalNote}</span>
-              </div>
             </div>
           ))}
         </div>
 
-        {/* Policy Integration Box */}
-        <div className="mt-10 p-6 bg-archive-ivory rounded-lg border border-archive-border flex flex-col lg:flex-row items-center justify-between gap-6">
-          <div className="space-y-1">
-            <span className="font-mono text-xs uppercase tracking-wider text-archive-terracotta font-semibold">
-              VĂN KIỆN LỊCH SỬ • CHỈ THỊ SỐ 144-CT/TW (10/03/1967)
-            </span>
-            <h4 className="font-serif text-lg font-bold text-archive-charcoal">
-              Hệ thống phòng không toàn diện: Kết hợp Hầm hào – Sơ tán – Trực chiến
-            </h4>
-            <p className="text-xs sm:text-sm text-archive-umber max-w-3xl leading-relaxed">
-              Chỉ thị số 144-CT/TW của Ban Bí thư Trung ương Đảng nêu rõ yêu cầu tăng cường làm và tu sửa hầm, hào tại gia đình, đường phố, xí nghiệp, hợp tác xã, trường học và cơ quan; kết hợp với các trạm quan sát, thông báo tình hình và hướng dẫn nhân dân phòng tránh kịp thời.
-            </p>
-          </div>
-          <div className="shrink-0">
-            <a 
-              href="#tu-lieu" 
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded bg-archive-olive text-archive-paper text-xs font-mono hover:bg-archive-olive/90 transition-colors shadow-2xs"
-            >
-              Xem tài liệu tham khảo
-            </a>
-          </div>
+        {/* Historical Policy Summary */}
+        <div className="mt-10 p-6 bg-archive-ivory rounded-lg border border-archive-border">
+          <h4 className="font-serif text-lg font-bold text-archive-charcoal mb-2">
+            Hệ thống phòng không toàn diện: Kết hợp Hầm hào – Sơ tán – Trực chiến
+          </h4>
+          <p className="text-xs sm:text-sm text-archive-charcoal/90 max-w-4xl leading-relaxed">
+            Công tác phòng không nhân dân kết hợp chặt chẽ việc tổ chức mạng lưới hầm, hào tại gia đình, đường phố, xí nghiệp, hợp tác xã, trường học và cơ quan; kết hợp với hệ thống quan sát, báo động kịp thời nhằm bảo vệ tối đa tính mạng nhân dân và tiềm lực kháng chiến.
+          </p>
         </div>
       </div>
     </section>

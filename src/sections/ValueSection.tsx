@@ -46,9 +46,6 @@ export const ValueSection: React.FC = () => {
                 bảo vệ đời sống thường ngày, những nỗ lực tổ chức cộng đồng và sự hy sinh thầm lặng của những con người đã sống, học tập 
                 và lao động trong hoàn cảnh vô cùng khó khăn."
               </p>
-              <div className="mt-3 text-center text-xs font-mono text-archive-stone">
-                — Trích lược tư liệu nghiên cứu hiện vật lịch sử quân sự
-              </div>
             </div>
 
             <p className="text-xs sm:text-sm leading-relaxed">

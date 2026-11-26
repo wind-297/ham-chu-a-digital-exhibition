@@ -59,13 +59,8 @@ export const Footer: React.FC = () => {
               Cơ sở tư liệu
             </h4>
             <p className="text-xs text-archive-stone leading-relaxed">
-              Dữ liệu và nội dung công trình được khảo cứu từ Văn kiện Đảng Toàn tập (Chỉ thị 144-CT/TW), tài liệu Bách khoa Toàn thư Quân sự Việt Nam, di tích Căn cứ Tà Thiết, tài liệu Bảo tàng Lịch sử Quốc gia và hiện vật lịch sử kháng chiến.
+              Dữ liệu và nội dung công trình được khảo cứu từ các văn kiện lưu trữ lịch sử quân sự, các công trình nghiên cứu di sản và tư liệu bảo tàng về công tác phòng không nhân dân Việt Nam.
             </p>
-
-            <div className="p-3 bg-archive-charcoal/40 rounded border border-archive-charcoal text-[11px] font-mono leading-relaxed text-archive-stone">
-              <strong className="text-archive-paper block mb-1">ĐỊNH HƯỚNG XUẤT BẢN:</strong>
-              Công trình học thuật số phục vụ mục đích nghiên cứu, giáo dục lịch sử và lưu trữ di sản phòng không nhân dân Việt Nam.
-            </div>
           </div>
         </div>
 
