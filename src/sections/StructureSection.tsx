@@ -66,8 +66,8 @@ export const StructureSection: React.FC = () => {
                 
                 {/* Ground Reference Level */}
                 <line x1="0" y1="180" x2="500" y2="180" stroke="#665344" strokeWidth="2" strokeDasharray="5 3" />
-                <rect x="365" y="188" width="125" height="18" fill="#F5F0E6" rx="3" opacity="0.9" />
-                <text x="427" y="201" textAnchor="middle" fontFamily="monospace" fontSize="9" fill="#665344" fontWeight="bold">MẶT ĐẤT TỰ NHIÊN</text>
+                <rect x="8" y="188" width="116" height="18" fill="#F5F0E6" rx="3" opacity="0.95" />
+                <text x="66" y="200" textAnchor="middle" fontFamily="monospace" fontSize="8.5" fill="#665344" fontWeight="bold">MẶT ĐẤT TỰ NHIÊN</text>
 
                 {/* Sunken Pit excavation */}
                 <polygon points="90,180 120,310 380,310 410,180" fill="#D8D0C2" stroke="#665344" strokeWidth="1.5" />
