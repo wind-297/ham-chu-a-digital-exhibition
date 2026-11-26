@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="20" fill="#41483A"/>
+  <!-- Archival paper tone background inner -->
+  <rect x="8" y="8" width="84" height="84" rx="14" fill="#F5F0E6"/>
+  <!-- Ground line -->
+  <line x1="20" y1="76" x2="80" y2="76" stroke="#665344" stroke-width="4" stroke-linecap="round"/>
+  <!-- A-Frame struts -->
+  <polygon points="50,22 26,74 34,74 50,38 66,74 74,74" fill="#A65F4B"/>
+  <rect x="36" y="56" width="28" height="5" rx="2" fill="#665344"/>
+  <!-- Shelter chamber indicator -->
+  <circle cx="50" cy="67" r="4" fill="#41483A"/>
+</svg>
