@@ -66,7 +66,7 @@ export const ValueSection: React.FC = () => {
             <div className="p-4 bg-archive-parchment rounded border border-archive-border/60">
               <span className="font-mono text-xs text-archive-terracotta font-bold block mb-1">BÀI HỌC 01</span>
               <h4 className="font-serif font-bold text-base text-archive-charcoal mb-1">Thế trận lòng dân</h4>
-              <p className="text-xs text-archive-umber leading-relaxed">
+              <p className="text-xs text-archive-umber leading-relaxed editorial-justify">
                 Đường lối chiến tranh nhân dân: lấy dân làm gốc, toàn dân tham gia đào hầm hào bảo vệ tính mạng con người và hậu phương.
               </p>
             </div>
@@ -74,7 +74,7 @@ export const ValueSection: React.FC = () => {
             <div className="p-4 bg-archive-parchment rounded border border-archive-border/60">
               <span className="font-mono text-xs text-archive-olive font-bold block mb-1">BÀI HỌC 02</span>
               <h4 className="font-serif font-bold text-base text-archive-charcoal mb-1">Ý chí vượt khó & Thích ứng</h4>
-              <p className="text-xs text-archive-umber leading-relaxed">
+              <p className="text-xs text-archive-umber leading-relaxed editorial-justify">
                 Khả năng tiếp thu sáng tạo kinh nghiệm quốc tế, tận dụng tre ngâm, gỗ đồi tự nhiên để tạo nên công trình bảo vệ thiết thực.
               </p>
             </div>
@@ -82,7 +82,7 @@ export const ValueSection: React.FC = () => {
             <div className="p-4 bg-archive-parchment rounded border border-archive-border/60">
               <span className="font-mono text-xs text-archive-charcoal font-bold block mb-1">BÀI HỌC 03</span>
               <h4 className="font-serif font-bold text-base text-archive-charcoal mb-1">Giá trị của Hòa bình</h4>
-              <p className="text-xs text-archive-umber leading-relaxed">
+              <p className="text-xs text-archive-umber leading-relaxed editorial-justify">
                 Nhắc nhở thế hệ hôm nay trân trọng môi trường hòa bình, ghi nhớ sự chở che thầm lặng và hy sinh của các thế hệ cha anh.
               </p>
             </div>

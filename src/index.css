@@ -48,20 +48,15 @@
     line-height: 1.85;
   }
 
-  @media (min-width: 640px) {
-    .editorial-justify {
-      text-align: justify;
-      text-justify: inter-word;
-      text-align-last: left;
-      hyphens: auto;
-    }
-  }
-
-  @media (max-width: 639px) {
-    .editorial-justify {
-      text-align: left;
-      text-align-last: left;
-    }
+  /* Academic Editorial Justified Text (Desktop & Mobile) */
+  .editorial-justify,
+  .editorial-justify p,
+  article p {
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
+    hyphens: auto;
+    -webkit-hyphens: auto;
   }
 
   /* Archival paper stamp border */

@@ -70,7 +70,7 @@ export const TimelineSection: React.FC = () => {
                         {evt.title}
                       </h3>
 
-                      <p className="text-xs sm:text-[13px] text-archive-umber mt-1.5 leading-relaxed">
+                      <p className="text-xs sm:text-[13px] text-archive-umber mt-1.5 leading-relaxed editorial-justify">
                         {evt.summary}
                       </p>
 

@@ -92,7 +92,7 @@ export const RoleSection: React.FC = () => {
           <h4 className="font-serif text-lg font-bold text-archive-charcoal mb-2">
             Hệ thống phòng không toàn diện: Kết hợp Hầm hào – Sơ tán – Trực chiến
           </h4>
-          <p className="text-xs sm:text-sm text-archive-charcoal/90 max-w-4xl leading-relaxed">
+          <p className="text-xs sm:text-sm text-archive-charcoal/90 max-w-4xl leading-relaxed editorial-justify">
             Công tác phòng không nhân dân kết hợp chặt chẽ việc tổ chức mạng lưới hầm, hào tại gia đình, đường phố, xí nghiệp, hợp tác xã, trường học và cơ quan; kết hợp với hệ thống quan sát, báo động kịp thời nhằm bảo vệ tối đa tính mạng nhân dân và tiềm lực kháng chiến.
           </p>
         </div>

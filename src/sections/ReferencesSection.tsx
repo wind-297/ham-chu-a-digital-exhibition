@@ -46,7 +46,7 @@ export const ReferencesSection: React.FC = () => {
                   <strong className="text-archive-olive font-sans">{ref.authorOrOrg}</strong> • {ref.publicationDate}
                 </div>
 
-                <p className="text-xs sm:text-[13px] text-archive-charcoal/90 leading-relaxed mb-4">
+                <p className="text-xs sm:text-[13px] text-archive-charcoal/90 leading-relaxed mb-4 editorial-justify">
                   {ref.description}
                 </p>
 
